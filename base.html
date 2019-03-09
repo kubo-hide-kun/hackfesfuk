@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+			
+			<!--Bootsrtap ライブラリ読み込み　-->
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                 
+
+			<!-キャンバスのライブラリ読み込み1 ->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	</head>
+	<body>
+		<!-- パソコン表示 -->
+		
+		<!--　スマホ表示 -->
+		<div class="canvas">
+			<div class="hidden-lg" id="canvas">
+		<canvas id="mycanvas" height="50" width="50" ></canvas>
+		<canvas id="mycanvas1" height="50" width="50" ></canvas>
+		<canvas id="mycanvas2" height="50" width="50" ></canvas>
+		</div>
+		
+		<ul id="chart_legend"></ul>
+
+
+</div>
+<!-- Bootstrapライブラリ読み込み -->
+
+</body>
+
+<style>
+.canvas{
+	display:flex;
+	justify-content:center;
+	margin:auto;
+}
+
+#canvas{
+	border-style:groove;
+}
+
+#mycanvas, #mycanvas1, #mycanvas2{
+	padding-right:5px;
+}
+
+</style>
+
+<script>
+var data = [
+ {
+  value: 300,
+  color:"#F7464A",
+  highlight: "#FF5A5E",
+  label: "Red"
+ },
+ {
+  value: 50,
+  color: "#46BFBD",
+  highlight: "#5AD3D1",
+  label: "Green"
+ },
+ {
+  value: 100,
+  color: "#FDB45C",
+  highlight: "#FFC870",
+  label: "Yellow"
+ }
+];
+
+var data1 = [
+ {
+  value: 100,
+  color:"#F7464A",
+  highlight: "#FF5A5E",
+  label: "Red"
+ },
+ {
+  value: 150,
+  color: "#46BFBD",
+  highlight: "#5AD3D1",
+  label: "Green"
+ },
+ {
+  value: 200,
+  color: "#FDB45C",
+  highlight: "#FFC870",
+  label: "Yellow"
+ }
+];
+
+var data2 = [
+ {
+  value: 150,
+  color:"#F7464A",
+  highlight: "#FF5A5E",
+  label: "Red"
+ },
+ {
+  value: 100,
+  color: "#46BFBD",
+  highlight: "#5AD3D1",
+  label: "Green"
+ },
+ {
+  value: 200,
+  color: "#FDB45C",
+  highlight: "#FFC870",
+  label: "Yellow"
+ }
+];
+
+var myChart = new Chart(document.getElementById("mycanvas").getContext("2d")).Doughnut(data)
+var myChart1 = new Chart(document.getElementById("mycanvas1").getContext("2d")).Doughnut(data1)
+var myChart2 = new Chart(document.getElementById("mycanvas2").getContext("2d")).Doughnut(data2)
+
+
+</script>
+	
+	
+
