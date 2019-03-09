@@ -1,2 +1,87 @@
-div.buttan_default {width:200px; height:150px; position:absolute; top:350px; left:400px}
-div.buttan_calender {width:200px; height:150px; position:absolute; top:130px; left:50px}
+.buttan_default {width:200px;
+  height:150px;
+  position:absolute;
+  top:350px; left:400px}
+
+.buttan_calender {width:200px;
+  height:150px;
+  position:absolute;
+  top:130px; left:50px}
+
+.form {visibility:hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 540px;
+  height: 600px;
+  background: #cff;
+  box-shadow: 20px 20px 20px gray}
+
+/*
+.form p {
+  margin: 20px;
+  display: flex;
+  font-size: 32px;
+}
+
+.radios {
+  height: 32px;
+  width: 32px;
+}
+*/
+
+input[type=radio], input[type=checkbox] {
+  display: none;
+}
+
+.radio, .checkbox {
+  box-sizing: border-box;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 8px 0;
+  padding: 12px 12px 12px 42px;
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio:hover, .checkbox:hover {
+  background-color: #e2edd7;
+}
+.radio:hover:after, .checkbox:hover:after {
+  border-color: #53b300;
+}
+.radio:after, .checkbox:after {
+  transition: border-color 0.2s linear;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: block;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  content: '';
+}
+
+.radio:before {
+  transition: opacity 0.2s linear;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-25%);
+  display: block;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #53b300;
+  content: '';
+  opacity: 0;
+}
+input[type=radio]:checked + .radio:before {
+  opacity: 1;
+}
