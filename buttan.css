@@ -30,6 +30,34 @@
   width: 32px;
 }
 */
+.charset1 {font-family: monospace;
+  font-size:30px;
+  position: absolute;
+  background-color: #fff;
+  top: 5px;
+  left: 80px;}
+
+.rei {font-size:50px;
+  position: absolute;
+  padding: 10px 0;
+  color: #f0f;
+  margin: 1.0em 0;
+  top: -10px;
+  left: 300px;}
+
+.rei::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 300px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid #faf;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);}
 
 input[type=radio], input[type=checkbox] {
   display: none;
