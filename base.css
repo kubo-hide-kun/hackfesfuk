@@ -1,7 +1,7 @@
 body {
-	font-size:16px; 
-	line-height:22px; 
-	text-align:left; 
+	font-size:16px;
+	line-height:22px;
+	text-align:left;
 }
 html,body{
 	overflow: hidden
@@ -11,7 +11,7 @@ html,body{
 
  div#container {
  	width:auto; margin: auto;
- 	padding: 0px; 
+ 	padding: 0px;
 }
 
 
@@ -48,11 +48,10 @@ html,body{
 }
 */
 .charset1 {font-family: monospace;
-  font-size:30px;
+  font-size:40px;
   position: absolute;
-  background-color: #fff;
-  top: 5px;
-  left: 80px;}
+  top: 164px;
+  left: 1008px;}
 
 .rei {font-size:50px;
   position: absolute;
