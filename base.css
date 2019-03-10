@@ -28,31 +28,28 @@ html,body{
 
 .form {
   display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  /* transform: translate(-50%,-50%); */
   width: 540px;
   height: 600px;
   background: #cff;
-  box-shadow: 20px 20px 20px gray}
+  box-shadow: 20px 20px 20px gray
+}
 
-/*
-.form p {
-  margin: 20px;
-  display: flex;
-  font-size: 32px;
+.form_submit_button{
+	background-color: white;
+	width: auto;
+	height: auto;
+	font-size: 20px;
 }
-.radios {
-  height: 32px;
-  width: 32px;
-}
-*/
+
 .charset1 {font-family: monospace;
   font-size:40px;
   position: absolute;
-  top: 164px;
-  left: 1008px;}
+  top: 256px;
+  left: 1048px;}
 
 .rei {font-size:50px;
   position: absolute;
@@ -76,12 +73,14 @@ html,body{
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);}
 
+/*********************************************/
 input[type=radio], input[type=checkbox] {
   display: none;
 }
 
 .radio, .checkbox {
   box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   position: relative;
   display: inline-block;
@@ -99,6 +98,7 @@ input[type=radio], input[type=checkbox] {
   border-color: #53b300;
 }
 .radio:after, .checkbox:after {
+  -webkit-transition: border-color 0.2s linear;
   transition: border-color 0.2s linear;
   position: absolute;
   top: 50%;
@@ -113,11 +113,11 @@ input[type=radio], input[type=checkbox] {
 }
 
 .radio:before {
+  -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   position: absolute;
   top: 50%;
-  left: 18px;
-  transform: translateY(-25%);
+  left: 20px;
   display: block;
   margin-top: -5px;
   width: 10px;
@@ -131,7 +131,28 @@ input[type=radio]:checked + .radio:before {
   opacity: 1;
 }
 
-
+.checkbox:before {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  display: block;
+  margin-top: -7px;
+  width: 5px;
+  height: 9px;
+  border-right: 3px solid #53b300;
+  border-bottom: 3px solid #53b300;
+  content: '';
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[type=checkbox]:checked + .checkbox:before {
+  opacity: 1;
+}
+/*********************************************/
 
 #mycanvas{
   position:absolute;
