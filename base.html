@@ -5,21 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="base.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
 
 		<!-- cssファイルの呼出し　-->
 		<title></title>
 
-			<!--Bootstrap ライブラリ 
+			<!--Bootstrap ライブラリ
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
     <link rel="stylesheet" href="personalPortfolioWebpage.css"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="WebProgram.js"></script> 
-  
+    <script type="text/javascript" src="WebProgram.js"></script>
+
 
 			<!--キャンバスのライブラリ読み込み1 -->
 
@@ -63,76 +63,79 @@
 
 			</div>
 <!-- Q1 -->
-  <div class="form" id="q0">
-          <h2>外に出た？</h2>
-          <input type="radio" name="hoge1" value="yes" checked>
-          <label for="radio01" class="radio">出たよ</label>
+	<div class="form" id="q1">
+		<form action="">
+	    <h2>外に出た？</h2>
+	    <input type="radio" name="q1" value="Yes" checked id="radio01" />
+	    <label for="radio01" class="radio">出たよ</label>
 
-          <input type="radio" name="hoge1" value="no">
-          <label for="radio02" class="radio">一歩も出てない</label>
-      <p>
-        <button id="btn1" type="submit" text="送信する">
-      </p>
-  </div>
+	    <input type="radio" name="q1" value="no" id="radio02" />
+	    <label for="radio02" class="radio">一歩も出てない</label>
+
+			<p><button type="button" name="submit" value="hoge" class="form_submit_button" id="btn1">送信する</button></p>
+
+		</form>
+	</div>
 
 	<!-- Q2 -->
-  <div class="form" id="q1">
-          <h2>運動した？</h2>
-          <input type="radio" name="hoge2" value="yes" />
-          <label for="radio01" class="radio">したよ！</label>
+	<div class="form" id="q2">
+		<form action="">
+			<h2>運動した？</h2>
+			<input type="radio" name="q2" value="Yes" checked id="radio03" />
+			<label for="radio03" class="radio">したよ！</label>
 
-          <input type="radio" name="hoge2" value="no"  checked>
-          <label for="radio02" class="radio">運動なんてするわけないじゃん</label>
-      <p>
-        <button id="btn2" type="submit" value="送信する">
-      </p>
-  </div>
+			<input type="radio" name="q2" value="no" id="radio04" />
+			<label for="radio04" class="radio">運動なんてするわけないじゃん</label>
+
+			<p><button type="button" name="submit" value="hoge" class="form_submit_button" id="btn2">送信する</button></p>
+
+		</form>
+	</div>
 
 	<!-- Q3 -->
-  <div class="form" id="q2">
-        <section>
-          <h2>気分はどう？</h2>
-          <input type="radio" name="hoge3" value="yes" checked/>
-          <label for="radio01" class="radio">最高！！フゥゥゥゥゥゥゥゥ！！！！</label>
+	<div class="form" id="q3">
+		<form action="">
+			<h2>気分はどう？</h2>
+			<input type="radio" name="q3" value="Yes" checked id="radio05" />
+			<label for="radio05" class="radio">最高！！フゥゥゥゥゥゥゥゥ！！！！</label>
 
-          <input type="radio" name="hoge3" value="no"  />
-          <label for="radio02" class="radio">んー。普通・・・</label>
-        </section>
-      <p>
-        <button id="btn3" type="submit" value="送信する">
-      </p>
-  </div>
+			<input type="radio" name="q3" value="no" id="radio06" />
+			<label for="radio06" class="radio">んー。普通・・・</label>
+
+			<p><button type="button" name="submit" value="hoge" class="form_submit_button" id="btn3">送信する</button></p>
+
+		</form>
+	</div>
 
 	<!-- Q4 -->
-  <div class="form" id="q3">
-        <section>
-          <h2>プログラミングのことどう思う？</h2>
-          <input type="radio" name="hoge4" value="yes" checked>
-          <label for="radio01" class="radio">めっちゃ好き</label>
+	<div class="form" id="q4">
+		<form action="">
+			<h2>プログラミングのことどう思う？</h2>
+			<input type="radio" name="q4" value="Yes" checked id="radio07" />
+			<label for="radio07" class="radio">めっちゃ好き</label>
 
-          <input type="radio" name="hoge4" value="no" >
-          <label for="radio02" class="radio">苦手・・・</label>
-        </section>
-      <p>
-        <button id="btn4" type="submit" value="送信する">
-      </p>
-  </div>
+			<input type="radio" name="q4" value="no" id="radio08" />
+			<label for="radio08" class="radio">苦手・・・</label>
+
+			<p><button type="button" name="submit" value="hoge" class="form_submit_button" id="btn4">送信する</button></p>
+
+		</form>
+	</div>
 
 	<!-- Q5 -->
-  <div class="form" id="q4">
-        <section>
-          <h2>今日私以外の女と話した？</h2>
-          <input type="radio" name="hoge5" value="yes" >
-          <label for="radio01" class="radio">話したよ</label>
+	<div class="form" id="q5">
+		<form action="">
+			<h2>今日私以外の女と話した？</h2>
+			<input type="radio" name="q5" value="Yes" checked id="radio09" />
+			<label for="radio09" class="radio">話したよ</label>
 
-          <input type="radio" name="hoge5" value="no" checked>
-          <label for="radio02" class="radio">話すわけないじゃないか！</label>
-        </section>
-      <p>
-        <button id="btn5" type="submit" value="送信する">
-      </p>
-  </div>
+			<input type="radio" name="q5" value="no" id="radio10" />
+			<label for="radio10" class="radio">話すわけないじゃないか！</label>
 
+			<p><button type="button" name="submit" value="hoge" class="form_submit_button" id="btn5">送信する</button></p>
+
+		</form>
+	</div>
 
 
 <script type="text/javascript" src="base.js"></script>
