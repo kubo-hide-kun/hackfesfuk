@@ -1,8 +1,13 @@
-var ans = 0;
+var ans = -1;
+var claered = false;
 $(function() {
   $("#question").click(function() {
       console.log("AC");
       $("#q1").show();
+      if(ans==-1)ans++;
+      else {
+          claered = true;
+      }
   });
   $("#btn1").click(function() {
 
@@ -57,7 +62,13 @@ $(function() {
         }else{
             ans += 20;
         }
+        if(claered)ans /= 2;
         console.log(ans);
+        if(ans<=10)$('#question').attr('src', 'images/level1.png');
+        else if(ans<=30)$('#question').attr('src', 'images/level2.png');
+        else if(ans<=70)$('#question').attr('src', 'images/level3.png');
+        else if(ans<=90)$('#question').attr('src', 'images/level4.png');
+        else $('#question').attr('src', 'images/level5.png');
         $("#q5").hide();
     });
 });
